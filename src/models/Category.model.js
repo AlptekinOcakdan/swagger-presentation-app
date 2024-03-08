@@ -1,56 +1,5 @@
 import {Schema, model} from "mongoose";
 
-/**
- * @swagger
- * components:
- *   schemas:
- *     Category:
- *       type: object
- *       required:
- *         - title
- *         - slug
- *         - status
- *       properties:
- *         id:
- *           type: string
- *           description: The auto-generated id of the category
- *         title:
- *           type: string
- *           description: The title of the category
- *         description:
- *           type: string
- *           description: The description of the category
- *         slug:
- *           type: string
- *           description: The slug of the category
- *         status:
- *           type: string
- *           description: The status of the category
- *         parent:
- *           type: string
- *           description: The ID of the parent category
- *         coverImage:
- *           type: string
- *           description: The cover image of the category
- *         createdBy:
- *           type: string
- *           description: The ID of the user who created the category
- *         products:
- *           type: array
- *           items:
- *             type: string
- *           description: The list of product IDs in the category
- *       example:
- *         id: "123456789"
- *         title: "Electronics"
- *         description: "All electronic gadgets"
- *         slug: "electronics"
- *         status: "Active"
- *         parent: "123456"
- *         coverImage: "url-to-image"
- *         createdBy: "user123"
- *         products: ["prod123", "prod456"]
- */
 const categorySchema = new Schema({
     title: {
         type: String,

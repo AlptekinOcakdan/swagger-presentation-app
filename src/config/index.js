@@ -6,8 +6,6 @@ import cookieParser from 'cookie-parser';
 import passport from 'passport';
 import path from 'path';
 
-import configureSwagger from "./swagger.config.js";
-
 import {fileURLToPath} from 'url';
 import {dirname} from 'path';
 
@@ -25,5 +23,4 @@ export default function (app){
     
     morganBody(app);
     
-    configureSwagger(app);
 }

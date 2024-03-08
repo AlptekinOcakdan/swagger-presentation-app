@@ -1,63 +1,6 @@
 import {Schema, model} from "mongoose";
 import {USER_ROLES} from "../constants/types.js";
 
-/**
- * @swagger
- * components:
- *   schemas:
- *     User:
- *       type: object
- *       required:
- *         - firstName
- *         - lastName
- *         - username
- *         - email
- *         - password
- *         - role
- *       properties:
- *         firstName:
- *           type: string
- *           description: The first name of the user
- *         lastName:
- *           type: string
- *           description: The last name of the user
- *         username:
- *           type: string
- *           description: The username of the user
- *         email:
- *           type: string
- *           description: The email address of the user
- *         password:
- *           type: string
- *           description: The password of the user
- *         contact:
- *           type: array
- *           items:
- *             type: object
- *             properties:
- *               countryCode:
- *                 type: string
- *               number:
- *                 type: string
- *         addresses:
- *           type: array
- *           items:
- *             type: object
- *             properties:
- *               alias:
- *                 type: string
- *               details:
- *                 type: string
- *               country:
- *                 type: string
- *               city:
- *                 type: string
- *               postalCode:
- *                 type: string
- *         role:
- *           type: string
- *           description: The role of the user
- */
 const userSchema = new Schema({
     firstName: {
         type: String,
