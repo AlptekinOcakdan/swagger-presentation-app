@@ -1,0 +1,44 @@
+{
+  "name": "swagger-app",
+  "version": "1.0.0",
+  "description": "Preparation for swagger presentation",
+  "main": "server.js",
+  "type": "module",
+  "scripts": {
+    "start": "nodemon server.js"
+  },
+  "nodemonConfig": {
+    "watch": [
+      "server.js",
+      "src"
+    ],
+    "ext": "js"
+  },
+  "exports": {
+    "regex:(/.*)(.js)?": "/$1.js"
+  },
+  "author": "Alptekin",
+  "license": "ISC",
+  "dependencies": {
+    "@aws-sdk/client-s3": "^3.525.0",
+    "bcrypt": "^5.1.1",
+    "body-parser": "^1.20.2",
+    "cookie-parser": "^1.4.6",
+    "express": "^4.18.3",
+    "helmet": "^7.1.0",
+    "jsonwebtoken": "^9.0.2",
+    "mime-types": "^2.1.35",
+    "mongoose": "^8.2.1",
+    "morgan-body": "^2.6.9",
+    "multer": "^1.4.5-lts.1",
+    "passport": "^0.7.0",
+    "slugify": "^1.6.6",
+    "swagger-jsdoc": "^6.2.8",
+    "swagger-ui-express": "^5.0.0",
+    "uuid": "^9.0.1"
+  },
+  "devDependencies": {
+    "dotenv": "^16.4.5",
+    "nodemon": "^3.1.0"
+  }
+}
